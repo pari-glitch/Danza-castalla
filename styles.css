@@ -763,7 +763,51 @@ input[type="date"] {
   -webkit-appearance: auto;
   cursor: pointer;
 }
+/* AJUSTE NAVEGACIÓN MÓVIL */
+@media (max-width: 768px) {
+  header nav,
+  .nav-container,
+  .navbar {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 10px 15px !important;
+    gap: 10px !important;
+  }
 
+  header nav ul,
+  .nav-links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+    gap: 8px 12px !important;
+    width: 100% !important;
+  }
+
+  header nav ul li a,
+  .nav-links a {
+    display: inline-block !important;
+    padding: 6px 12px !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    border-radius: 20px !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+  }
+
+  /* Destacar el botón de Inscripción */
+  header nav ul li a[href*="inscripcion"],
+  .btn-inscripcion {
+    background-color: #d63384 !important;
+    color: #ffffff !important;
+  }
+}
 
 
 
